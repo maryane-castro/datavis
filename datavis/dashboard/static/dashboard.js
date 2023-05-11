@@ -8,24 +8,18 @@
   // Graphs
   const ctx = document.getElementById('myChart')
   // eslint-disable-next-line no-unused-vars
+
   const myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'line', //line
     data: {
-      labels: [
-        'Domingo',
-        'Segunda',
-        'Terça',
-        'Quarta',
-        'Quinta',
-        'Sexta',
-        'Sábado',
-      ],
+      labels: nm,
+
       datasets: [{
         data: dt,
         lineTension: 0,
-        backgroundColor: 'transparent',
+        backgroundColor: '#fff',
         borderColor: '#007bff',
-        borderWidth: 4,
+        borderWidth: 3,
         pointBackgroundColor: '#007bff'
       }]
     },
@@ -41,3 +35,5 @@
     }
   })
 })()
+
+
